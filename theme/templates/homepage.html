@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <section class="flex flex-col justify-center h-screen">
+            <h1 class="text-6xl">Jenni + Design = 🏠</h1>
+
+            <div class="flex flex-row p-2">
+                <div class="text-justify">
+                    "Planning and installing your dream kitchen is straightforward, but we know everyone's needs
+                    are different. That's why we offer flexible support options - from complimentary services to
+                    affordable professional assistance. You're in control of how much help you need.
+                    Explore our service options below to find the perfect fit for your project. Have questions? I am
+                    here to help! Reach me at 1-393-8899 (3PM-6PM EST) or schedule a
+                    consultation to discuss your kitchen transformation."
+                </div>
+            </div>
+            <div class="flex flex-row p-6">
+                <div class="m-8">
+                    <c-card title="Kitchen Services" url="">
+                        Here are the services we offer...
+                    </c-card>
+                </div>
+
+                <div class="m-8">
+                    <c-card title="Purchasing" url="spades">
+                        Here are the services we offer...
+                    </c-card>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
