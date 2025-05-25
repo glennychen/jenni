@@ -129,4 +129,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 TAILWIND_APP_NAME = 'theme'
 
-STATIC_ROOT = '/home/src/jenni/static_root' #where to collecstatic
+STATIC_ROOT = '/home/bps/src/jenni/static_root' #where to collecstatic
