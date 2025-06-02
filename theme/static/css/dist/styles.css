@@ -305,6 +305,9 @@
   .max-w-md {
     max-width: var(--container-md);
   }
+  .flex-1 {
+    flex: 1;
+  }
   .grow {
     flex-grow: 1;
   }
