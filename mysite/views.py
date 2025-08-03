@@ -6,7 +6,7 @@ class ContactForm(forms.Form):
     email = forms.EmailField(required=True)
     message = forms.CharField(widget=forms.Textarea, required=True)
 
-def index(request):
+def home(request):
     return render(request, 'homepage.html', {})
 
 def about(request):

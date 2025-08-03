@@ -1,23 +1,44 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static tailwind_tags %}
+
+{% block title %}About - Jenni{% endblock %}
+
+{% block body_class %}bg-gray-300{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="/build/tailwind.css">
+{% endblock %}
 
 {% block content %}
-    <div class="container">
-        <section class="flex flex-col ">
-            <div class="flex-row p-2">
-                <img class="float-right p-3" src="https://i.postimg.cc/7Lgb7Scq/kitchen-home.jpg">
-                <h1 class="text-6xl">Jenni Home Improvement Services </h1>
-                <p class="text-3xl p-3">You can do it, but you don't have to</p>
-                "Planning and installing your dream kitchen is straightforward", but we know everyone's needs
-                are different. That's why we offer flexible support options - from complimentary services to
-                affordable professional assistance. You're in control of how much help you need.
-                Explore our service options below to find the perfect fit for your project. Have questions? I am
-                here to help! Reach me at 1-393-8899 (3PM-6PM EST) or schedule a
-                consultation to discuss your kitchen transformation."
-                </p>
+<div class="bg-gray-100 flex">
 
-                <p class="p-3">規劃和安裝您夢想中的廚房其實很簡單，但我們了解每個人的需求都不盡相同。因此，我們提供彈性的支援選項——從免費服務到實惠的專業協助，任您選擇。您可以自行決定需要多少幫助。請參閱下方的服務選項，找到最適合您專案的方案。有任何疑問嗎？我隨時樂意協助您！歡迎致電 1-393-8899（美東時間下午3點至6點），或預約諮詢，一同討論您的居家裝修改造計畫。</p>
+    <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
+        <div class="xl:max-w-lg xl:ml-auto">
+            <img class="h-20" src="https://i.ibb.co/MDX5bt95/logo.jpg" alt="logo">
+        <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden"
+             src="https://i.ibb.co/spjSGQnx/remodel-kitchen.jpg" alt="remodel-kitchen">
+        <h1 class="mt-6 text-2xl font-bold text-gray-900 leading-tight sm:mt-8sm:text-4xl lg:text-3xl xl:text-4xl">You can renovate your kitchen
+            that you appreciate everyday,
+            <br class="hidden lg:inline"><span class="text-indigo-500"> with a little help.</span>
+        </h1>
+        <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+            Jenni home remodeling helps you design a beautiful kitchen with modernized space, better layout, and a fresh environment. We also help you order the parts you need and
+            handle shipping.
+        </p>
+        <div class="mt-4 sm:mt-6">
+            <a href="/contact"
+               class="inline-block rounded-lg bg-indigo-500 px-5 py-3 text-white uppercase tracking-wider font-semibold sm:text-base">Book
+                your appointment</a>
+        </div>
+        </div>
 
-            </div>
-        </section>
     </div>
+
+    <div class="hidden lg:block lg:w-1/2 lg:relative">
+        <img class="absolute inset-0 h-full w-full object-cover object-center"
+             src="https://i.ibb.co/spjSGQnx/remodel-kitchen.jpg" alt="remodel-kitchen">
+    </div>
+
+
+</div>
 {% endblock %}

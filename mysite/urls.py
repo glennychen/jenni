@@ -17,12 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
-from .views import index, about, faq, contact, project
+from .views import home, about, faq, contact, project
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("__reload__/", include("django_browser_reload.urls")),
-    path("", about, name="index"),
+    path("", home, name="index"),
     path("about/", about, name="about"),    
     path("faq/", faq, name="faq"),
     path("contact/", contact, name="contact"),
