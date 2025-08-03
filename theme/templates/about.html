@@ -1,14 +1,15 @@
+{% extends 'base.html' %}
 {% load static tailwind_tags %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About - Jenni</title>
-    {% tailwind_css %}
-    <link rel="stylesheet" href="/build/tailwind.css">
-</head>
-<body class="bg-gray-300">
+
+{% block title %}About - Jenni{% endblock %}
+
+{% block body_class %}bg-gray-300{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="/build/tailwind.css">
+{% endblock %}
+
+{% block content %}
 <div class="bg-gray-100 flex">
 
     <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
@@ -40,7 +41,4 @@
 
 
 </div>
-
-
-</body>
-</html>
+{% endblock %}

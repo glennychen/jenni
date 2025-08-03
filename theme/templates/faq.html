@@ -1,102 +1,102 @@
+{% extends 'base.html' %}
 {% load static tailwind_tags %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FAQ - Jenni</title>
-    {% tailwind_css %}
-    <link rel="stylesheet" href="/build/tailwind.css">
-</head>
-<body class="bg-gray-300">
+
+{% block title %}FAQ - Jenni{% endblock %}
+
+{% block body_class %}bg-gray-300{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="/build/tailwind.css">
+{% endblock %}
+
+{% block content %}
 <div>
-          <section class="text-gray-700">
+    <section class="text-gray-700">
         <div class="container px-5 py-24 mx-auto">
-          <div class="text-center mb-20">
-            <div class="flex items-center justify-between w-full">
-            <img class="h-20" src="https://i.ibb.co/MDX5bt95/logo.jpg" alt="logo">
-            <h1 class="flex-1 sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-              Smart Remodeling Tips and FAQ
-            </h1>
+            <div class="text-center mb-20">
+                <div class="flex items-center justify-between w-full">
+                    <img class="h-20" src="https://i.ibb.co/MDX5bt95/logo.jpg" alt="logo">
+                    <h1 class="flex-1 sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+                        Smart Remodeling Tips and FAQ
+                    </h1>
+                </div>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+                    Plan Smart. Remodel Easy.
+                </p>
             </div>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              Plan Smart. Remodel Easy.
-            </p>
-          </div>
-          <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-            <div class="w-full lg:w-1/2 px-4 py-2">
-              <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How Long does the remodel take?
-                </summary>
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                <div class="w-full lg:w-1/2 px-4 py-2">
+                    <details class="mb-4">
+                        <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                            How Long does the remodel take?
+                        </summary>
 
-                <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-              <details class="mb-4">
-                <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                  Can I buy or give you a wish list that I want in my kitchen?
-                </summary>
+                        <span>
+                            Laboris qui labore cillum culpa in sunt quis sint veniam.
+                            Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                            minim velit nostrud pariatur culpa magna in aute.
+                        </span>
+                    </details>
+                    <details class="mb-4">
+                        <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                            Can I buy or give you a wish list that I want in my kitchen?
+                        </summary>
 
-                <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-              <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How do I deal with the old kitchen?
-                </summary>
+                        <span>
+                            Laboris qui labore cillum culpa in sunt quis sint veniam.
+                            Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                            minim velit nostrud pariatur culpa magna in aute.
+                        </span>
+                    </details>
+                    <details class="mb-4">
+                        <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                            How do I deal with the old kitchen?
+                        </summary>
 
-                <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
+                        <span>
+                            Laboris qui labore cillum culpa in sunt quis sint veniam.
+                            Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                            minim velit nostrud pariatur culpa magna in aute.
+                        </span>
+                    </details>
+                </div>
+                <div class="w-full lg:w-1/2 px-4 py-2">
+                    <details class="mb-4">
+                        <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                            How do I contact you?
+                        </summary>
+
+                        <span class="px-4 py-2">
+                            Laboris qui labore cillum culpa in sunt quis sint veniam.
+                            Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                            minim velit nostrud pariatur culpa magna in aute.
+                        </span>
+                    </details>
+                    <details class="mb-4">
+                        <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                            Is there any warranty?
+                        </summary>
+
+                        <span class="px-4 py-2">
+                            Laboris qui labore cillum culpa in sunt quis sint veniam.
+                            Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                            minim velit nostrud pariatur culpa magna in aute.
+                        </span>
+                    </details>
+                    <details class="mb-4">
+                        <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                            How can I make the payment?
+                        </summary>
+
+                        <span class="px-4 py-2">
+                            Laboris qui labore cillum culpa in sunt quis sint veniam.
+                            Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                            minim velit nostrud pariatur culpa magna in aute.
+                        </span>
+                    </details>
+                </div>
             </div>
-            <div class="w-full lg:w-1/2 px-4 py-2">
-              <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How do I contact you?
-                </summary>
-
-                <span class="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-              <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  Is there any warranty?
-                </summary>
-
-                <span class="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-              <details class="mb-4">
-                <summary class="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How can I make the payment?
-                </summary>
-
-                <span class="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-            </div>
-          </div>
         </div>
-      </section>
-    </div>
-</body>
-</html>
+    </section>
+</div>
+{% endblock %}

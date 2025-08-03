@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
 from .views import index, about, faq, contact, project
 
 urlpatterns = [
@@ -28,4 +29,6 @@ urlpatterns = [
 
     path("project/", project, name="project"),
     #path("pages/", include("pages.urls")),
+
+    path("cipher", TemplateView.as_view(template_name = 'cotton/cipher.html'))
 ]

@@ -1,14 +1,13 @@
+{% extends 'base.html' %}
 {% load static tailwind_tags %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact - Jenni</title>
-    {% tailwind_css %}
-    <link rel="stylesheet" href="/build/tailwind.css">
-</head>
-<body class="">
+
+{% block title %}Contact - Jenni{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="/build/tailwind.css">
+{% endblock %}
+
+{% block content %}
 <div class="container my-12 mx-auto px-2 md:px-4">
 
     <section class="mb-32">
@@ -157,6 +156,4 @@
         </div>
     </section>
 </div>
-
-</body>
-</html>
+{% endblock %}

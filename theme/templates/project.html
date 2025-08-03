@@ -1,14 +1,13 @@
+{% extends 'base.html' %}
 {% load static tailwind_tags %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project - Jenni</title>
-    {% tailwind_css %}
-    <link rel="stylesheet" href="/build/tailwind.css">
-</head>
-<body class="">
+
+{% block title %}Project - Jenni{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="/build/tailwind.css">
+{% endblock %}
+
+{% block content %}
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
   <div>
     <img class="object-cover object-center w-full h-40 max-w-full rounded-lg"
@@ -54,5 +53,4 @@
       alt="gallery-photo" />
   </div>
 </div>
-</body>
-</html>
+{% endblock %}
