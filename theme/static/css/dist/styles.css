@@ -951,6 +951,11 @@
     }
   }
   @media (width >= 64rem) {
+    .lg\:justify-center {
+      justify-content: center;
+    }
+  }
+  @media (width >= 64rem) {
     .lg\:justify-start {
       justify-content: flex-start;
     }

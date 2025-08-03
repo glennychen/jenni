@@ -20,7 +20,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             # TODO: Manually save data to the database
-            return redirect('success')  # Redirect after successful submission
+            return redirect('contact')  # Redirect back to contact page after successful submission
     else:
         form = ContactForm()
 
