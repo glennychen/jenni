@@ -809,6 +809,11 @@
     }
   }
   @media (width >= 64rem) {
+    .lg\:flex {
+      display: flex;
+    }
+  }
+  @media (width >= 64rem) {
     .lg\:hidden {
       display: none;
     }

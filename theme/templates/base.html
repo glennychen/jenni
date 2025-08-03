@@ -20,8 +20,7 @@
 					<button
 						class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
 						type="button"
-						data-twe-collapse-init
-						data-twe-target="#navbarSupportedContentY"
+						id="navbarToggle"
 						aria-controls="navbarSupportedContentY"
 						aria-expanded="false"
 						aria-label="Toggle navigation">
@@ -45,9 +44,8 @@
 
 				<!-- Navigation links -->
 				<div
-					class="!visible hidden grow basis-[100%] items-center text-center lg:!flex lg:basis-auto lg:text-left"
-					id="navbarSupportedContentY"
-					data-twe-collapse-item>
+					class="hidden grow basis-[100%] items-center text-center lg:flex lg:basis-auto lg:text-left"
+					id="navbarSupportedContentY">
 					<ul
 						class="me-auto flex flex-col lg:flex-row"
 						data-twe-navbar-nav-ref>
@@ -68,20 +66,20 @@
 								data-twe-nav-link-ref
 								data-twe-ripple-init
 								data-twe-ripple-color="light"
-								>Project</a
+								>Projects</a
 							>
 						</li>
 						<li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
 							<a
 								class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-								href="#!"
+								href="/faq"
 								data-twe-nav-link-ref
 								data-twe-ripple-init
 								data-twe-ripple-color="light"
-								>Pricing</a
+								>FAQ</a
 							>
 						</li>
-						<li class="mb-2 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+						<li class="mb-4 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
 							<a
 								class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
 								href="/contact"
@@ -89,6 +87,16 @@
 								data-twe-ripple-init
 								data-twe-ripple-color="light"
 								>Contact</a
+							>
+						</li>
+						<li class="mb-2 lg:mb-0 lg:pe-2" data-twe-nav-item-ref>
+							<a
+								class="block text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+								href="/about"
+								data-twe-nav-link-ref
+								data-twe-ripple-init
+								data-twe-ripple-color="light"
+								>About</a
 							>
 						</li>
 					</ul>
@@ -146,5 +154,26 @@
 				<a href="">Jenni Inc.</a>
 			</div>
 		</footer>
+
+		<!-- Mobile menu JavaScript -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const navbarToggle = document.getElementById('navbarToggle');
+				const navbarMenu = document.getElementById('navbarSupportedContentY');
+				
+				navbarToggle.addEventListener('click', function() {
+					const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+					
+					// Toggle the menu visibility
+					if (isExpanded) {
+						navbarMenu.classList.add('hidden');
+						navbarToggle.setAttribute('aria-expanded', 'false');
+					} else {
+						navbarMenu.classList.remove('hidden');
+						navbarToggle.setAttribute('aria-expanded', 'true');
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
